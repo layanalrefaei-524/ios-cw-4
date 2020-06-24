@@ -11,12 +11,21 @@ import Foundation
 
 // MARK:  1️⃣  انشئ هيكل باسم Student
 //و يحتوي على ثلاث خصائص كالتالي
-/// 1. name: String
-/// 2. track: String
-/// 3. gender: String
+struct Student{
+    var name: String
+    var track: String
+    var gender: String
+    
+    func ImageName() -> String{
+    if gender == "boy"{
+    return "boyProfileImage"
+    }
 
-//struct ...
-
+    else{
+    return "girlProfileImage"
+    }
+  }
+}
 
 
 
@@ -50,12 +59,12 @@ import Foundation
 
 // كتبنالك ياها عشان لا تقول (مووعاريف أكتب مصفوففة وااااع 😭)
 // امسح الكود واكتبه بطريقتك المبدعة 😍
-//var students: [Student] =
-//    [
-//        Student(...
-//        Student(...
-//        Student(...
-//    ]
+var students: [Student] =
+   [
+    Student(name: "ريم خالد", track: "iOS", gender: "girl"),
+    Student(name: "صالح شهاب",  track: "Web",  gender: "boy"),
+    Student(name:"محمد علي",  track: "Android",  gender: "boy")
+    ]
 
 
 
